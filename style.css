@@ -1,0 +1,68 @@
+body{
+    background-color: red;
+}
+
+
+/* for small devices   0-100px  -- green  */
+@media screen and (max-width:100px){
+    body{
+        background-color: green;
+    }
+    .medium{
+        display: none;
+    }
+    .large{
+        display: none;
+    }
+    .small{
+        display: block;
+    }
+}
+
+/* for medium devices   100-500px  -- blue  */
+@media screen and (min-width:100px) {
+    body{
+        background-color: blue;
+    }
+
+    .small{
+        display: none;
+    }
+    .large{
+        display: none;
+    }
+    .medium{
+        display: block;
+    }
+}
+
+
+
+
+/* for large devices   500 and up  -- yellow  */
+@media screen and (min-width:500px){
+    body{
+        background-color: yellow;
+    }
+    .small{
+        display: none;
+    }
+    
+    .medium{
+        display: none;
+    }
+    .large{
+        display: block;
+    }
+   
+}
+
+
+/* 
+max-width:200px == range(0-200)
+
+
+min-width:200px == range (200 and up) 
+
+
+*/
